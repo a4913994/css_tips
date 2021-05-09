@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selection</title>
+    <style>
+        .wrapper {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 2rem;
+            font-family: sans-serif;
+        }
+
+        .custom-highlighting::selection {
+            background-color: #8e44ad;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div>
+        <p>
+            This is default highlighting. Try it out.
+        </p>
+
+        <p class="custom-highlighting">
+            This is customized highlighting. Try it out.
+        </p>
+    </div>
+</div>
+</body>
+</html>

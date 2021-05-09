@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Truncate the text to the specific number of lines</title>
+    <style>
+        /*  If you like this pen, be sure to give it a ❤. */
+        body {
+            padding: 20px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .tile {
+            background: linear-gradient(to right, #2B32B2, #1488CC);
+            padding: 15px;
+            margin-bottom: 15px;
+            padding: 15px;
+            width: 300px;
+            color: #fff;
+        }
+
+        .line-clamp {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3; /* Change this line if you want. In this case it trimmed the text to 3 lines. */
+            overflow: hidden;
+        }
+
+        .line-clamp--four {
+            -webkit-line-clamp: 4; /* Trimmed the second tile to four lines. */
+        }
+    </style>
+</head>
+<body>
+This text is trimmed to 3 lines
+<div class="tile">
+    <p class="line-clamp">
+        You can use <code>-webkit-line-clamp</code> property to truncate the text to the specific number of lines.
+        An ellipsis will be shown at the point where the text is clamped.
+    </p>
+</div>
+
+This text is trimmed to 4 lines
+<div class="tile">
+    <p class="line-clamp line-clamp--four">
+        You can use <code>-webkit-line-clamp</code> property to truncate the text to the specific number of lines.
+        An ellipsis will be shown at the point where the text is clamped.
+    </p>
+</div>
+
+This text is not trimmed
+<div class="tile">
+    <p>
+        You can use <code>-webkit-line-clamp</code> property to truncate the text to the specific number of lines.
+        An ellipsis will be shown at the point where the text is clamped.
+    </p>
+</div>
+</body>
+</html>
